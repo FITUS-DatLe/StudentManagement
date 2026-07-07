@@ -13,5 +13,4 @@ int main(int argc, char *argv[])
 //taolagaumeo
 //taolabaotran
 //hello
-//hihi
-//lô
+//ê 
