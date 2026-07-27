@@ -6,7 +6,6 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-<<<<<<< HEAD
 
     // Khởi tạo CSDL SQLite trước khi mở màn hình Đăng nhập
     StudentManager::getInstance().initManager();
@@ -21,14 +20,3 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-=======
-    MainWindow w;
-    w.show();
-    return QApplication::exec();
-}
-// taolagautruc
-//taolagaumeo
-//taolabaotran
-//hello
-//ê 
->>>>>>> 1ddc4bafdd217c0564d7f284cce747867b8aac49
