@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWindow</class>
+ <widget class="QDialog" name="LoginWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Đăng nhập - Hệ Thống Quản Lý Sinh Viên HCMUS</string>
+  </property>
+  <layout class="QHBoxLayout" name="mainLayout">
+   <property name="leftMargin"><number>15</number></property>
+   <property name="topMargin"><number>15</number></property>
+   <property name="rightMargin"><number>15</number></property>
+   <property name="bottomMargin"><number>15</number></property>
+   <item>
+    <widget class="QFrame" name="cardFrame">
+     <layout class="QHBoxLayout" name="cardLayout">
+      <property name="spacing"><number>0</number></property>
+      <property name="leftMargin"><number>0</number></property>
+      <property name="topMargin"><number>0</number></property>
+      <property name="rightMargin"><number>0</number></property>
+      <property name="bottomMargin"><number>0</number></property>
+      <item>
+       <!-- CỘT TRÁI (380px) - BỐ CỤC CÂN BẰNG TRUNG TÂM -->
+       <widget class="QFrame" name="leftPanel">
+        <property name="minimumSize"><size><width>380</width><height>0</height></size></property>
+        <property name="maximumSize"><size><width>380</width><height>16777215</height></size></property>
+        <layout class="QVBoxLayout" name="leftLayout">
+         <property name="leftMargin"><number>30</number></property>
+         <property name="topMargin"><number>40</number></property>
+         <property name="rightMargin"><number>30</number></property>
+         <property name="bottomMargin"><number>40</number></property>
+         <property name="alignment"><set>Qt::AlignHCenter|Qt::AlignVCenter</set></property>
+         <item><spacer name="verticalSpacer_1"><property name="orientation"><enum>Qt::Vertical</enum></property></spacer></item>
+
+         <!-- 1. LOGO TỰ ĐỘNG CĂN GIỮA TRỤC DỌC -->
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="iconBox">
+           <property name="minimumSize"><size><width>95</width><height>95</height></size></property>
+           <property name="maximumSize"><size><width>95</width><height>95</height></size></property>
+           <property name="font"><font><pointsize>42</pointsize></font></property>
+           <property name="text"><string>🎓</string></property>
+           <property name="alignment"><set>Qt::AlignCenter</set></property>
+          </widget>
+         </item>
+
+         <!-- 2. TIÊU ĐỀ TRANG QUẢN LÝ SINH VIÊN -->
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="lblTitle">
+           <property name="text"><string>TRANG QUẢN LÝ
+SINH VIÊN</string></property>
+           <property name="alignment"><set>Qt::AlignCenter</set></property>
+          </widget>
+         </item>
+
+         <!-- 3. THANH NGANG PHÂN CÁCH MỞ RỘNG (130px), CĂN GIỮA -->
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QFrame" name="divider">
+           <property name="minimumSize"><size><width>130</width><height>3</height></size></property>
+           <property name="maximumSize"><size><width>130</width><height>3</height></size></property>
+          </widget>
+         </item>
+
+         <!-- 4. TIÊU ĐỀ PHỤ TRƯỜNG ĐH KHTN -->
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="lblSubtitle">
+           <property name="text"><string>TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN,
+ĐẠI HỌC QUỐC GIA TP. HỒ CHÍ MINH</string></property>
+           <property name="alignment"><set>Qt::AlignCenter</set></property>
+          </widget>
+         </item>
+         <item><spacer name="verticalSpacer_2"><property name="orientation"><enum>Qt::Vertical</enum></property></spacer></item>
+        </layout>
+       </widget>
+      </item>
+
+      <!-- CỘT PHẢI (FORM ĐĂNG NHẬP) -->
+      <item>
+       <widget class="QFrame" name="rightPanel">
+        <layout class="QVBoxLayout" name="rightLayout">
+         <property name="spacing"><number>15</number></property>
+         <property name="leftMargin"><number>45</number></property>
+         <property name="topMargin"><number>40</number></property>
+         <property name="rightMargin"><number>45</number></property>
+         <property name="bottomMargin"><number>40</number></property>
+         <item>
+          <layout class="QHBoxLayout" name="topBarLayout">
+           <item><spacer name="horizontalSpacer_1"><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer></item>
+           <item><widget class="QPushButton" name="btnClose"><property name="minimumSize"><size><width>30</width><height>30</height></size></property><property name="maximumSize"><size><width>30</width><height>30</height></size></property><property name="text"><string>✕</string></property><property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property></widget></item>
+          </layout>
+         </item>
+         <item><spacer name="verticalSpacer_3"><property name="orientation"><enum>Qt::Vertical</enum></property></spacer></item>
+         <item><widget class="QLabel" name="lblWelcome"><property name="text"><string>Xin chào 👋</string></property></widget></item>
+         <item><widget class="QLabel" name="lblInstruction"><property name="text"><string>Vui lòng đăng nhập tài khoản hệ thống để tiếp tục</string></property></widget></item>
+         <item><widget class="QLineEdit" name="txtUsername"><property name="minimumSize"><size><width>0</width><height>45</height></size></property><property name="placeholderText"><string>Tài khoản (VD: 25127293)</string></property></widget></item>
+         <item><widget class="QLineEdit" name="txtPassword"><property name="minimumSize"><size><width>0</width><height>45</height></size></property><property name="placeholderText"><string>Mật khẩu truy cập</string></property></widget></item>
+         <item>
+          <layout class="QHBoxLayout" name="optionsLayout">
+           <item><widget class="QCheckBox" name="chkRemember"><property name="text"><string>Ghi nhớ đăng nhập</string></property><property name="checked"><bool>true</bool></property></widget></item>
+           <item><spacer name="horizontalSpacer_2"><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer></item>
+           <item><widget class="QLabel" name="lblForgot"><property name="text"><string>&lt;a style='color: #00509e; text-decoration: none;' href='#'&gt;Quên mật khẩu?&lt;/a&gt;</string></property><property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property></widget></item>
+          </layout>
+         </item>
+         <item><widget class="QPushButton" name="btnLogin"><property name="minimumSize"><size><width>0</width><height>48</height></size></property><property name="text"><string>Đăng nhập ➔</string></property><property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property></widget></item>
+         <item><spacer name="verticalSpacer_4"><property name="orientation"><enum>Qt::Vertical</enum></property></spacer></item>
+         <item><widget class="QLabel" name="lblFooter"><property name="text"><string>Protected by HCMUS Security Pro &amp; SQLite Encryption</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

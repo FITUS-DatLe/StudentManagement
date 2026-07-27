@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/StudentManagement_autogen"
+  "StudentManagement_autogen/include/ui_loginwindow.h"
   "StudentManagement_autogen/include/ui_mainwindow.h"
+  "StudentManagement_autogen/include/ui_studentdialog.h"
+  "StudentManagement_autogen/include/ui_studentprofiledialog.h"
   "StudentManagement_autogen/mocs_compilation.cpp"
   "StudentManagement_autogen/timestamp"
 )

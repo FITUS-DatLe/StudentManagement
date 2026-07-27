@@ -6,25 +6,361 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1050</width>
+    <height>650</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Hệ Thống Quản Lý Sinh Viên - HCMUS Dashboard</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>26</height>
-    </rect>
-   </property>
+  <property name="styleSheet">
+   <string notr="true">
+QMainWindow, QWidget#centralwidget { background-color: #F4F6F9; }
+QFrame#frameHeader { background-color: #1E3A8A; border-bottom: 2px solid #1D4ED8; }
+QLabel#lblHeaderTitle { color: #FFFFFF; font-size: 16px; font-weight: bold; }
+QLabel#lblUserInfo { color: #E0F2FE; font-size: 13px; font-weight: bold; }
+QFrame#frameSidebar, QFrame#frameContent { background-color: #FFFFFF; border: 1px solid #D1D5DB; border-radius: 8px; }
+QLabel#lblSidebarTitle { color: #1E3A8A; font-size: 13px; font-weight: bold; border-bottom: 1px solid #E2E8F0; padding-bottom: 5px; }
+QListWidget#listMajors { border: none; background-color: transparent; font-size: 13px; outline: 0; }
+QListWidget#listMajors::item { padding: 12px 10px; border-radius: 6px; margin-bottom: 4px; color: #334155; font-weight: bold; }
+QListWidget#listMajors::item:hover { background-color: #F1F5F9; color: #1E3A8A; }
+QListWidget#listMajors::item:selected { background-color: #2563EB; color: #FFFFFF; }
+QFrame#frameStats { background-color: #F8FAFC; border: 1px dashed #CBD5E1; border-radius: 6px; }
+QLabel#lblStatTitle { color: #0F172A; font-size: 12px; font-weight: bold; }
+QLabel#lblStatTotal, QLabel#lblStatIT, QLabel#lblStatMath, QLabel#lblStatBio, QLabel#lblStatScholar { color: #475569; font-size: 12px; font-weight: bold; }
+QLineEdit#txtSearch { padding: 6px 12px; border: 1px solid #CBD5E1; border-radius: 6px; background-color: #F8FAFC; color: #0F172A; font-size: 13px; }
+QLineEdit#txtSearch:focus { border: 2px solid #2563EB; background-color: #FFFFFF; }
+QComboBox#cboSort { padding: 6px 10px; border: 1px solid #CBD5E1; border-radius: 6px; background-color: #FFFFFF; color: #334155; font-size: 13px; font-weight: bold; }
+QPushButton#btnAdd { background-color: #2563EB; color: white; font-weight: bold; border-radius: 6px; font-size: 13px; }
+QPushButton#btnAdd:hover { background-color: #1D4ED8; }
+QPushButton#btnEdit { background-color: #F59E0B; color: white; font-weight: bold; border-radius: 6px; font-size: 13px; }
+QPushButton#btnEdit:hover { background-color: #D97706; }
+QPushButton#btnDelete { background-color: #EF4444; color: white; font-weight: bold; border-radius: 6px; font-size: 13px; }
+QPushButton#btnDelete:hover { background-color: #DC2626; }
+QTableWidget#tblStudents { border: 1px solid #E2E8F0; border-radius: 6px; background-color: #FFFFFF; gridline-color: #F1F5F9; selection-background-color: #DBEAFE; selection-color: #1E3A8A; font-size: 13px; outline: 0; }
+QHeaderView::section { background-color: #F8FAFC; color: #334155; font-weight: bold; border: none; border-bottom: 2px solid #CBD5E1; border-right: 1px solid #E2E8F0; padding: 8px; font-size: 13px; }
+   </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frameHeader">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1050</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="lblHeaderTitle">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>500</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>🎓 HỆ THỐNG QUẢN LÝ SINH VIÊN - HCMUS</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblUserInfo">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>15</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>👤 Admin: 25127293 | Trạng thái: Online</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frameSidebar">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>240</width>
+      <height>550</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="lblSidebarTitle">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>15</y>
+       <width>210</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>📂 DANH MỤC NGÀNH</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listMajors">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>50</y>
+       <width>210</width>
+       <height>220</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>🌟 Tất cả sinh viên</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>💻 Ngành CNTT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>📐 Ngành Toán học</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>🧬 Ngành Sinh học</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>🏆 Danh sách Học bổng</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QFrame" name="frameStats">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>280</y>
+       <width>210</width>
+       <height>250</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="lblStatTitle">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>15</y>
+        <width>180</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>📊 THỐNG KÊ NHANH</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblStatTotal">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>55</y>
+        <width>180</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>• Tổng sinh viên: 3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblStatIT">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>90</y>
+        <width>180</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>• Ngành CNTT: 1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblStatMath">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>125</y>
+        <width>180</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>• Ngành Toán: 1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblStatBio">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>160</y>
+        <width>180</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>• Ngành Sinh: 1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblStatScholar">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>205</y>
+        <width>180</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>• Học bổng: 2 SV</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #2563EB; font-weight: bold;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frameContent">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>80</y>
+      <width>750</width>
+      <height>550</height>
+     </rect>
+    </property>
+    <widget class="QLineEdit" name="txtSearch">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>240</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>🔍 Tìm kiếm theo tên, mã số...</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cboSort">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>20</y>
+       <width>150</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Sắp xếp: Mã số ⬆</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sắp xếp: Điểm TB ⬇</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sắp xếp: Điểm TB ⬆</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="btnAdd">
+     <property name="geometry">
+      <rect>
+       <x>435</x>
+       <y>20</y>
+       <width>95</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>+ Thêm SV</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnEdit">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>20</y>
+       <width>95</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>✏️ Sửa</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnDelete">
+     <property name="geometry">
+      <rect>
+       <x>645</x>
+       <y>20</y>
+       <width>85</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>🗑️ Xóa</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tblStudents">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>75</y>
+       <width>710</width>
+       <height>455</height>
+      </rect>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <column>
+      <property name="text">
+       <string>Mã Số</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Họ và Tên</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ngày Sinh</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ngành Học</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Điểm TB</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Xếp Loại / Học Bổng</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

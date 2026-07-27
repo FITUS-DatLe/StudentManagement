@@ -223,6 +223,102 @@ StudentManagement_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/StudentManagement_autogen/mocs_compilation.cpp.s
 .PHONY : StudentManagement_autogen/mocs_compilation.cpp.s
 
+biostudent.obj: biostudent.cpp.obj
+.PHONY : biostudent.obj
+
+# target to build an object file
+biostudent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/biostudent.cpp.obj
+.PHONY : biostudent.cpp.obj
+
+biostudent.i: biostudent.cpp.i
+.PHONY : biostudent.i
+
+# target to preprocess a source file
+biostudent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/biostudent.cpp.i
+.PHONY : biostudent.cpp.i
+
+biostudent.s: biostudent.cpp.s
+.PHONY : biostudent.s
+
+# target to generate assembly for a file
+biostudent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/biostudent.cpp.s
+.PHONY : biostudent.cpp.s
+
+databasehelper.obj: databasehelper.cpp.obj
+.PHONY : databasehelper.obj
+
+# target to build an object file
+databasehelper.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/databasehelper.cpp.obj
+.PHONY : databasehelper.cpp.obj
+
+databasehelper.i: databasehelper.cpp.i
+.PHONY : databasehelper.i
+
+# target to preprocess a source file
+databasehelper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/databasehelper.cpp.i
+.PHONY : databasehelper.cpp.i
+
+databasehelper.s: databasehelper.cpp.s
+.PHONY : databasehelper.s
+
+# target to generate assembly for a file
+databasehelper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/databasehelper.cpp.s
+.PHONY : databasehelper.cpp.s
+
+itstudent.obj: itstudent.cpp.obj
+.PHONY : itstudent.obj
+
+# target to build an object file
+itstudent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/itstudent.cpp.obj
+.PHONY : itstudent.cpp.obj
+
+itstudent.i: itstudent.cpp.i
+.PHONY : itstudent.i
+
+# target to preprocess a source file
+itstudent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/itstudent.cpp.i
+.PHONY : itstudent.cpp.i
+
+itstudent.s: itstudent.cpp.s
+.PHONY : itstudent.s
+
+# target to generate assembly for a file
+itstudent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/itstudent.cpp.s
+.PHONY : itstudent.cpp.s
+
+loginwindow.obj: loginwindow.cpp.obj
+.PHONY : loginwindow.obj
+
+# target to build an object file
+loginwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/loginwindow.cpp.obj
+.PHONY : loginwindow.cpp.obj
+
+loginwindow.i: loginwindow.cpp.i
+.PHONY : loginwindow.i
+
+# target to preprocess a source file
+loginwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/loginwindow.cpp.i
+.PHONY : loginwindow.cpp.i
+
+loginwindow.s: loginwindow.cpp.s
+.PHONY : loginwindow.s
+
+# target to generate assembly for a file
+loginwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/loginwindow.cpp.s
+.PHONY : loginwindow.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -271,6 +367,174 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+mathstudent.obj: mathstudent.cpp.obj
+.PHONY : mathstudent.obj
+
+# target to build an object file
+mathstudent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/mathstudent.cpp.obj
+.PHONY : mathstudent.cpp.obj
+
+mathstudent.i: mathstudent.cpp.i
+.PHONY : mathstudent.i
+
+# target to preprocess a source file
+mathstudent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/mathstudent.cpp.i
+.PHONY : mathstudent.cpp.i
+
+mathstudent.s: mathstudent.cpp.s
+.PHONY : mathstudent.s
+
+# target to generate assembly for a file
+mathstudent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/mathstudent.cpp.s
+.PHONY : mathstudent.cpp.s
+
+student.obj: student.cpp.obj
+.PHONY : student.obj
+
+# target to build an object file
+student.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/student.cpp.obj
+.PHONY : student.cpp.obj
+
+student.i: student.cpp.i
+.PHONY : student.i
+
+# target to preprocess a source file
+student.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/student.cpp.i
+.PHONY : student.cpp.i
+
+student.s: student.cpp.s
+.PHONY : student.s
+
+# target to generate assembly for a file
+student.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/student.cpp.s
+.PHONY : student.cpp.s
+
+studentdialog.obj: studentdialog.cpp.obj
+.PHONY : studentdialog.obj
+
+# target to build an object file
+studentdialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/studentdialog.cpp.obj
+.PHONY : studentdialog.cpp.obj
+
+studentdialog.i: studentdialog.cpp.i
+.PHONY : studentdialog.i
+
+# target to preprocess a source file
+studentdialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/studentdialog.cpp.i
+.PHONY : studentdialog.cpp.i
+
+studentdialog.s: studentdialog.cpp.s
+.PHONY : studentdialog.s
+
+# target to generate assembly for a file
+studentdialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/studentdialog.cpp.s
+.PHONY : studentdialog.cpp.s
+
+studentfactory.obj: studentfactory.cpp.obj
+.PHONY : studentfactory.obj
+
+# target to build an object file
+studentfactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/studentfactory.cpp.obj
+.PHONY : studentfactory.cpp.obj
+
+studentfactory.i: studentfactory.cpp.i
+.PHONY : studentfactory.i
+
+# target to preprocess a source file
+studentfactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/studentfactory.cpp.i
+.PHONY : studentfactory.cpp.i
+
+studentfactory.s: studentfactory.cpp.s
+.PHONY : studentfactory.s
+
+# target to generate assembly for a file
+studentfactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/studentfactory.cpp.s
+.PHONY : studentfactory.cpp.s
+
+studentgroup.obj: studentgroup.cpp.obj
+.PHONY : studentgroup.obj
+
+# target to build an object file
+studentgroup.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/studentgroup.cpp.obj
+.PHONY : studentgroup.cpp.obj
+
+studentgroup.i: studentgroup.cpp.i
+.PHONY : studentgroup.i
+
+# target to preprocess a source file
+studentgroup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/studentgroup.cpp.i
+.PHONY : studentgroup.cpp.i
+
+studentgroup.s: studentgroup.cpp.s
+.PHONY : studentgroup.s
+
+# target to generate assembly for a file
+studentgroup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/studentgroup.cpp.s
+.PHONY : studentgroup.cpp.s
+
+studentmanager.obj: studentmanager.cpp.obj
+.PHONY : studentmanager.obj
+
+# target to build an object file
+studentmanager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/studentmanager.cpp.obj
+.PHONY : studentmanager.cpp.obj
+
+studentmanager.i: studentmanager.cpp.i
+.PHONY : studentmanager.i
+
+# target to preprocess a source file
+studentmanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/studentmanager.cpp.i
+.PHONY : studentmanager.cpp.i
+
+studentmanager.s: studentmanager.cpp.s
+.PHONY : studentmanager.s
+
+# target to generate assembly for a file
+studentmanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/studentmanager.cpp.s
+.PHONY : studentmanager.cpp.s
+
+studentprofiledialog.obj: studentprofiledialog.cpp.obj
+.PHONY : studentprofiledialog.obj
+
+# target to build an object file
+studentprofiledialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/studentprofiledialog.cpp.obj
+.PHONY : studentprofiledialog.cpp.obj
+
+studentprofiledialog.i: studentprofiledialog.cpp.i
+.PHONY : studentprofiledialog.i
+
+# target to preprocess a source file
+studentprofiledialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/studentprofiledialog.cpp.i
+.PHONY : studentprofiledialog.cpp.i
+
+studentprofiledialog.s: studentprofiledialog.cpp.s
+.PHONY : studentprofiledialog.s
+
+# target to generate assembly for a file
+studentprofiledialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\StudentManagement.dir\build.make CMakeFiles/StudentManagement.dir/studentprofiledialog.cpp.s
+.PHONY : studentprofiledialog.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -289,12 +553,45 @@ help:
 	@echo ... StudentManagement_autogen/mocs_compilation.obj
 	@echo ... StudentManagement_autogen/mocs_compilation.i
 	@echo ... StudentManagement_autogen/mocs_compilation.s
+	@echo ... biostudent.obj
+	@echo ... biostudent.i
+	@echo ... biostudent.s
+	@echo ... databasehelper.obj
+	@echo ... databasehelper.i
+	@echo ... databasehelper.s
+	@echo ... itstudent.obj
+	@echo ... itstudent.i
+	@echo ... itstudent.s
+	@echo ... loginwindow.obj
+	@echo ... loginwindow.i
+	@echo ... loginwindow.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... mathstudent.obj
+	@echo ... mathstudent.i
+	@echo ... mathstudent.s
+	@echo ... student.obj
+	@echo ... student.i
+	@echo ... student.s
+	@echo ... studentdialog.obj
+	@echo ... studentdialog.i
+	@echo ... studentdialog.s
+	@echo ... studentfactory.obj
+	@echo ... studentfactory.i
+	@echo ... studentfactory.s
+	@echo ... studentgroup.obj
+	@echo ... studentgroup.i
+	@echo ... studentgroup.s
+	@echo ... studentmanager.obj
+	@echo ... studentmanager.i
+	@echo ... studentmanager.s
+	@echo ... studentprofiledialog.obj
+	@echo ... studentprofiledialog.i
+	@echo ... studentprofiledialog.s
 .PHONY : help
 
 
